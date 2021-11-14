@@ -28,7 +28,7 @@ namespace ConsoleApp
             Console.ReadKey();
             Console.Clear();
 
-            BooksService booksService=new BooksService();
+            BooksService booksService=new(new BooksRepository());
 
             string input="";
             while (input!="wyjdz")
