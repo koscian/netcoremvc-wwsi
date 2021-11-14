@@ -12,7 +12,7 @@ namespace Domain
         DateTime Date { get; set; }
         List<BookOrdered> BooksOrderedList { get; set; }
 
-        Order()
+        public Order()
         {
             Date = DateTime.Now;
             BooksOrderedList = new();
