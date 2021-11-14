@@ -28,6 +28,8 @@ namespace ConsoleApp
             Console.ReadKey();
             Console.Clear();
 
+            BooksService booksService=new BooksService();
+
             string input="";
             while (input!="wyjdz")
             {
@@ -41,25 +43,25 @@ namespace ConsoleApp
                 }
                 else if (input == "dodaj")
                 {
-                    Console.WriteLine("proba dodania ksiazki");
+                    booksService.AddBooks();
                     Console.ReadKey();
                     Console.Clear();
                 }
                 else if (input == "usun")
                 {
-                    Console.WriteLine("proba usuniecia ksiazki");
+                    booksService.RemoveBook();
                     Console.ReadKey();
                     Console.Clear();
                 }
                 else if (input == "wypisz")
                 {
-                    Console.WriteLine("proba wypisania wszystkich ksiazek");
+                    booksService.ListBooks();
                     Console.ReadKey();
                     Console.Clear();
                 }
                 else if (input == "zmien")
                 {
-                    Console.WriteLine("proba zmiany stanu magazynowego ksiazek");
+                    booksService.ChangeState();
                     Console.ReadKey();
                     Console.Clear();
                 }
