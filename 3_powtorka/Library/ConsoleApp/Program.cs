@@ -25,6 +25,59 @@ namespace ConsoleApp
             else
                 Console.WriteLine("Access denied");
 
+            Console.ReadKey();
+            Console.Clear();
+
+            string input="";
+            while (input!="wyjdz")
+            {
+                Console.WriteLine("Wprowadź komendę (wpisz 'pomoc' aby zobaczyć listę komend): ");
+                input = Console.ReadLine();
+                if (input == "pomoc")
+                {
+                    Console.WriteLine("dodaj, usun, wypisz, zmien, dodaj zamowienie, lista zamowien");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                else if (input == "dodaj")
+                {
+                    Console.WriteLine("proba dodania ksiazki");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                else if (input == "usun")
+                {
+                    Console.WriteLine("proba usuniecia ksiazki");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                else if (input == "wypisz")
+                {
+                    Console.WriteLine("proba wypisania wszystkich ksiazek");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                else if (input == "zmien")
+                {
+                    Console.WriteLine("proba zmiany stanu magazynowego ksiazek");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                else if (input == "dodaj zamowienie")
+                {
+                    Console.WriteLine("proba dodania nowego zamowienia");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                else if (input == "lista zamowien")
+                {
+                    Console.WriteLine("proba wypisania wszystkich zamowien");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                
+
+            }
         }
     }
 }
