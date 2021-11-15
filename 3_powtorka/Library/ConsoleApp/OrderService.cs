@@ -27,6 +27,8 @@ namespace ConsoleApp
                 idKsiazki = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Podaj ilość:");
                 ilosc = Convert.ToInt32(Console.ReadLine());
+                BookOrdered bookOrdered = new();
+                
             }
         }
     }
